@@ -51,4 +51,21 @@ Ikuti langkah ini untuk menjalankan aplikasi di komputer lokal kamu.
 ### 1. Clone Repository
 ```bash
 git clone https://github.com/yeszi/klasifikasi-daun-singkong 
+
 cd klasifikasi-daun-singkong
+
+//pilih salah satu
+
+//untuk windows
+python -m venv venv
+.\venv\Scripts\activate
+
+//untuk mac atau linux
+python3 -m venv venv
+source venv/bin/activate
+
+//install library
+pip install streamlit pandas numpy scikit-learn matplotlib seaborn
+
+//jalankan code
+streamlit run singkong.py
